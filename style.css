@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Sora", serif;
+  background-color: #fafaf9;
+}
+
+.circle {
+  background-color: #f5c044;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+}
+
+.circle span {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  background: linear-gradient(to bottom, #ffff 5px, #fff08d, #dd9a1d, orange);
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  /* gap:-12px; */
+}
+
+.left_section {
+  padding: 10px;
+}
+
+.container .left_section {
+  padding: 10px;
+}
+.text {
+  color: #18181b;
+  padding-top: 10px;
+}
+
+.container .left_section .text h1 {
+  font-size: 36px;
+}
+
+.container .left_section .text p {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  max-width: 550px;
+  color: #52525a;
+  line-height: 30px;
+}
+
+.corrects div {
+  color: #52525a;
+  display: flex;
+  gap: 5px;
+  /* flex-direction: column; */
+  margin-block-end: 10px;
+}
+
+.corrects p {
+  font-size: 14px;
+}
+
+.right_section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+}
+
+.right_section .img1,
+.right_section .img2 {
+  background-color: #ffff;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+  padding: 10px;
+  width: 300px;
+  height: 150px;
+}
+
+.img1 {
+  margin-left: 250px;
+}
+
+.right_section .stars {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.right_section .text {
+  font-size: 16px;
+}
+
+.right_section p,
+.right_section p {
+  max-width: 280px;
+  color: #52525a;
+  padding-top: 10px;
+  line-height: 30px;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}

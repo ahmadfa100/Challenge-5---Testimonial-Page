@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 200px;
+            width: 100%;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .element {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .element:first-child {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element">element_1</div>
+        <div class="element">element_2</div>
+    </div>
+</body>
+</html>
